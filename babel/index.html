@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Setup</title>
+    <!-- React and ReactDOM UMD builds from a CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+
+
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel">
+    'use strict';
+
+    // Create a React component using a plain JavaScript function
+    function MyComponent() {
+        return <h1>Hello, React!</h1>;
+        // return React.createElement('h1', null, 'Hello, React!');
+    }
+
+    // Render the component to the DOM
+    ReactDOM.render(
+        React.createElement(MyComponent, null),
+        document.getElementById('root')
+    );
+</script>
+</body>
+</html>
